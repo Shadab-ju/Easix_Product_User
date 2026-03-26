@@ -11,6 +11,7 @@ ul li{
 a{
     text-decoration: none;
     color: #004E61;
+    cursor: pointer;
 }
 /*
 header
@@ -85,6 +86,7 @@ header
 /* profile quick detail */
 .profile_quick_detail {
     padding-top: 120px;
+    padding-bottom: 32px;
     background-color: #f7f9fc;
     position: relative;
 }
@@ -101,15 +103,67 @@ header
     display: flex;
     justify-content: start;
     align-items: stretch;
+    gap: 20px;
 }
 .profile_quick_detail .profile_image_quick_detail .profile_image img{
-    width: 350px;
-    border-radius: 10px;
+    width: 175px;
+    border-radius: 5px;
+    border: 5px solid white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .profile_quick_detail .profile_image_quick_detail .quick_detail h2{
-    font-size: clamp(2.5rem, 5vw, 3.8rem);
-
+    font-size: clamp(2rem, 3vw, 2.8rem);
 }
+
+.profile_quick_detail .profile_image_quick_detail .quick_detail h4{
+    font-size: clamp(1rem, 2.5vw, 2.5rem);
+    color: #4e4e4e;
+}
+.profile_image_quick_detail .quick_detail .phone, .profile_image_quick_detail .quick_detail .email{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    gap: 10px;
+}
+.profile_image_quick_detail .quick_detail img {
+    width: 32px;
+}
+
+
+
+/* about */
+.address_block .address_detail .image_detail{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+    padding-left: 16px;
+}
+.address_block .address_detail .address {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+.address_block .address_detail .address h3{
+    font-size: clamp(2.5rem, 3vw, 3.2rem);
+}
+.address_block .address_detail .address h3 span{
+    color: #004E61;
+    font-size: 24px;
+}
+.address_block .address_detail .image img{
+    width: 32px;
+}
+.address_block .address_detail .image_detail h4{
+    font-size: clamp(2rem, 2vw, 2rem);
+}
+.address_block .address_detail .image_detail h4 span{
+    padding-right: 24px;
+    font-size: clamp(2rem, 2vw, 2rem);
+    color: #4e4e4e;
+}
+
 
 /* footer */
 
